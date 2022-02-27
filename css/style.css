@@ -1,0 +1,259 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+/* Обнуление */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------------*/
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  font-family: "Red Hat Display", sans-serif;
+  background: #e0e8ff url("../img/pattern-background-desktop.svg") 0 0/100% auto no-repeat;
+}
+
+.wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.orderblock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 450px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 500px) {
+  body {
+    padding: 20px;
+  }
+  .orderblock {
+    max-width: 335px;
+  }
+}
+
+.mainimage {
+  margin: 0px 0px 50px 0px;
+}
+
+.mainimage__img {
+  max-width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+
+.lable {
+  font-size: 28px;
+  font-weight: 900;
+  margin: 0px 0px 20px 0px;
+  color: #1f2f56;
+}
+
+.description {
+  max-width: 355px;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #7280a7;
+  margin: 0px 0px 20px 0px;
+}
+
+.price_info {
+  padding: 24px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 355px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f5f7ff;
+  border-radius: 15px;
+  margin: 0px 0px 36px 0px;
+}
+
+.icon {
+  margin: 0px 20px 0px 0px;
+}
+
+.tariff {
+  margin: 0px 94px 0px 0px;
+  font-size: 16px;
+}
+
+.tariff__type {
+  color: #1f2f56;
+  font-weight: 900;
+  margin: 0px 0px 10px 0px;
+}
+
+.tariff_price {
+  color: #7280a7;
+}
+
+@media (max-width: 500px) {
+  .description {
+    max-width: 270px;
+  }
+  .price_info {
+    width: 300px;
+  }
+  .icon,
+  .tariff {
+    margin-right: 30px;
+  }
+}
+
+.change__link {
+  color: #3829e0;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.change__link:hover {
+  color: #766cf1;
+  text-decoration: none;
+}
+
+.proceed {
+  color: #fff;
+  background: #3829e0;
+  width: 355px;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0px 0px 32px 0px;
+  -webkit-box-shadow: -2px 15px 10px #e0e8ff;
+          box-shadow: -2px 15px 10px #e0e8ff;
+}
+
+.proceed:hover {
+  background: #766cf1;
+}
+
+@media (max-width: 500px) {
+  .proceed {
+    max-width: 300px;
+  }
+}
+
+.cancel {
+  margin: 0px 0px 50px 0px;
+}
+
+.cancel__link {
+  font-size: 16px;
+  color: #7280a7;
+  font-weight: 900;
+}
+
+.cancel__link:hover {
+  color: #1f2f56;
+}
+
+@media (max-width: 500px) {
+  .cancel {
+    margin: 0px 0px 30px 0px;
+  }
+}
+
+.attribution {
+  text-align: center;
+}
